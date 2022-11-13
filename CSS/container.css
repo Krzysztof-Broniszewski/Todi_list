@@ -1,0 +1,10 @@
+.body {
+    background-color: #eee;
+}
+
+.container {
+    max-width: 1200px;
+    background: white;
+    margin: auto;
+    min-height: 500px;
+}
