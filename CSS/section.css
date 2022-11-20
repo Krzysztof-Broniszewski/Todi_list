@@ -1,16 +1,17 @@
 .section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr auto;
     margin: 5px;
 }
 
 .section__container {
     background-color: #fff;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     margin: 1px;
 }
 
 .section__header {
+    padding: 0 15px;
     font-weight: bold;
     font-size: 30px;
 }

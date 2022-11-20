@@ -1,16 +1,15 @@
 .form {
     display: grid;
-}
-
-.form__section {
-    background-color: white;
-    margin: 10px;
-    padding: 10px;
+    grid-gap: 15px;
     grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    padding: 15px;
 }
 
-.form__sectionInput {
-    
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__title {
@@ -18,24 +17,23 @@
 }
 
 .form__input {
-    flex-basis: 100px;
-    flex-grow:1;
-    padding: 20px;
-    margin: 5px;
-    margin-right: 30px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
     border: 1px solid #ddd;
-    justify-content: flex-start;
-    flex-basis: 1300px;
 }
 
 .form__button {
     background-color: teal;
+    border: none;
     color: white;
     font-size: 15px;
-    margin: 5px;
+    font-weight: normal;
     padding: 10px;
     flex-wrap: nowrap;
-    flex-basis: 250px;
     border: none;
+}
+
+.form__button:hover {
+    transform: scale(115%);
+    transition-duration: .5s;
 }
