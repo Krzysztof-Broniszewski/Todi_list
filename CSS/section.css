@@ -1,0 +1,17 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.section__container {
+    background-color: #fff;
+    padding: 0 20px;
+    margin: 1px;
+}
+
+.section__header {
+    font-weight: bold;
+    font-size: 30px;
+}
+
